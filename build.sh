@@ -20,7 +20,9 @@ GRADLE_CACHE=$CWD/$SCRIPT_NAME/dot-gradle
 
 #ls $GRADLE_CACHE
 
-MF_PRINT_SOURCE_PATH=$1
+cd $1
+MF_PRINT_SOURCE_PATH=`pwd`
+cd $CWD
 
 echo "Building Mapfish Print from $MF_PRINT_SOURCE_PATH"
 
